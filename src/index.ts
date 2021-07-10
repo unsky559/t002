@@ -1,0 +1,1 @@
+require('./pages/landing/landing');
