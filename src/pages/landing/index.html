@@ -9,12 +9,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="//db.onlinewebfonts.com/c/2d60f8688ebdd4747c3b8a97756909a8?family=KilburnW01-Black" rel="stylesheet" type="text/css"/>
+  <link href="//db.onlinewebfonts.com/c/868477a85c9ccc7a26176a2457c331db?family=KilburnW01-Thin" rel="stylesheet" type="text/css"/>
 </head>
 <body>
   
-  <div class="wrapper">
-    <header class="header">
+  <!-- <div class="wrapper"> -->
+  <header class="header">
+    <div class="container">
       <div class="header_logo">
         <a href="#">
           <img src="../../res/images/logo.svg" alt="Tesla logo">
@@ -47,9 +48,964 @@
         </button>
         <button class="primary-btn">Registrace</button>
       </div>
-    </header>
+    </div>
+  </header>
     
-  </div>
+    <main class="main">
+      
+      <section class="section" id="tesla-token">
+        <div class="container">
+          <div class="main-info">
+            <div class="main-info_header">
+              <h1 class="header-text">
+                TESLA Token.
+              </h1>
+              <h2 class="secondary-header-text">
+                Connecting smart home with the world of cryptocurrencies
+              </h2>
+            </div>
+            <div class="main-info_round">
+              <p class="round-info">Round 1 is live: 100% bonus</p>
+              <div class="course-table">
+                <div class="course-table_top timer">
+                  <!-- data-undertext - is used for text that will display under the number -->
+                  <div class="timer_number" data-undertext="days">
+                    15
+                  </div>
+                  <div class="timer_number" data-undertext="hours">
+                    01
+                  </div>
+                  <div class="timer_number" data-undertext="minutes">
+                    24
+                  </div>
+                  <div class="timer_number" data-undertext="sec">
+                    30
+                  </div>
+                </div>
+                <div class="course-table_bottom">
+                  <div class="current-course">
+                    <div class="current-course_titler">
+                      <span class="current-course_title">
+                        Current course
+                      </span>
+                      <i class="current-course_icon"></i>
+                    </div>
+                    
+                    <span class="current-course_currency">TESLA / USDT</span>
+                    <span class="current-course_value">0,20</span>
+                  </div>
+                  <div class="graph">
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-info_slider">
+              <div class="main-info_slider_top">
+                <span class="gradient-text">170 956 079 TESLA</span>
+                <span class="gradient-text">400m TESLA</span>
+              </div>
+              <input class="main-info_slider_slider custom-gradient-slider" type="range">
+            </div>
+            <div class="main-info_controls">
+              <a href="#" class="primary-btn big table">
+                Buy tokens
+              </a>
+              <a href="#" class="secondary-btn big gradient-text">
+                <img src="../../res/images/download-icon.svg" alt="">
+                Whitepaper
+              </a>
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner_image">
+              <img src="../../res/images/frame.svg" alt="">
+            </div>
+            <div class="contact-us">
+              <span class="contact-us_text">
+                Connect to us:
+              </span>
+              <ul class="contact-us_links">
+                <li>
+                  <a href="#">
+                    <img src="../../res/images/telegram-icon.svg" alt="telegram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../res/images/youtube-icon.svg" alt="youtube">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../res/images/instagram-icon.svg" alt="instagram">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../../res/images/twitter-icon.svg" alt="twitter">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      
+      <section id="features">
+        <div class="container">
+          <div class="feature">
+            <div class="feature_image">
+              <img src="../../res/images/dollar-feat.svg" alt="">
+            </div>
+            <h3 class="feature_text">Payment tool</h3>
+          </div>
+          <div class="feature">
+            <div class="feature_image">
+              <img src="../../res/images/bitcoin-feat.svg" alt="">
+            </div>
+            <h3 class="feature_text">Stake</h3>
+          </div>
+          <div class="feature">
+            <div class="feature_image">
+              <img src="../../res/images/discount-voucher-feat.svg" alt="">
+            </div>
+            <h3 class="feature_text">Voucher for discounts</h3>
+          </div>
+          <div class="feature">
+            <div class="feature_image">
+              <img src="../../res/images/laptop-feat.svg" alt="">
+            </div>
+            <h3 class="feature_text">Access to limited services</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="video" style="background-image: url(./res/images/tesla-bg.svg);" >
+        <div class="container">
+          <div class="video-container">
+            
+            <div class="layer-card">
+              <div class="layer-card_overlay">
+                <div class="video-container_play-container">
+                  <button class="play-button">
+                    <img src="../../res/images/play-button.svg" alt="">
+                  </button>
+                </div>
+              </div>
+  
+              <div class="layer-card_background">
+                <img src="../../res/images/photos/house.png" alt="">
+              </div>
+              
+              <!-- next 2 tags is always need to be in end of 'layer-card' tag -->
+              <div class="layer-card_undercard"></div>
+              <div class="layer-card_undercard"></div>
+            </div>
+  
+          </div>
+          <div class="information-container">
+            <h2 class="second-heading">Tesla token video</h2>
+            <p class="default-paragraph space">
+              Check out the explainer video where you can find the TESLA token’s purpose and its connection to the company. In the video, we introduce you the token functions and factors that will ensure a stable demand for TESLA tokens.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="news" style="background-image: url(./res/images/dots-bg.svg);">
+        
+        <div class="container">
+          <div class="news-header">
+            <div class="news-header_title">
+              <h2 class="second-heading big">Tesla news</h2>
+              <p class="default-paragraph space">
+                Get acquainted with the most important news from the world of Tesla
+              </p>
+            </div>
+            <div class="news-header_controls">
+              <button class="circle-btn slider">
+                <div class="arrow left"></div>
+              </button>
+              <button class="circle-btn slider">
+                <div class="arrow right"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-holder news">
+
+          <div class="slider-holder_saver"></div>
+          
+          <div class="layer-card">
+            <div class="layer-card_overlay news_new-content">
+              <div class="news_new-content_body">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eum officiis, illum eius a eligendi modi rem aut doloremque nostrum quasi porro quaerat ad totam consequatur atque molestias sunt obcaecati.</p>
+              </div>
+              <div class="news_new-content_bottom">
+                <div class="news_new-content_bottom_controls">
+                  <a href="#" class="secondary-btn">
+                    Whitepaper
+                  </a>
+                </div>
+                <div class="news_new-content_bottom_date">
+                  <img src="../../res/images/clock-icon.svg" alt="">
+                  <time>02.06.2021</time>
+                </div>
+                
+              </div>
+            </div>
+            <div class="layer-card_background">
+              <img src="../../res/images/photos/house.png" alt="">
+            </div>
+            <!-- next 2 tags is always need to be in end of 'layer-card' tag -->
+            <div class="layer-card_undercard"></div>
+            <div class="layer-card_undercard"></div>
+          </div>
+
+          <div class="layer-card">
+            <div class="layer-card_overlay news_new-content">
+              <div class="news_new-content_body">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eum officiis, illum eius a eligendi modi rem aut doloremque nostrum quasi porro quaerat ad totam consequatur atque molestias sunt obcaecati.</p>
+              </div>
+              <div class="news_new-content_bottom">
+                <div class="news_new-content_bottom_controls">
+                  <a href="#" class="secondary-btn">
+                    Whitepaper
+                  </a>
+                </div>
+                <div class="news_new-content_bottom_date">
+                  <img src="../../res/images/clock-icon.svg" alt="">
+                  <time>02.06.2021</time>
+                </div>
+                
+              </div>
+            </div>
+            <div class="layer-card_background">
+              <img src="../../res/images/photos/house.png" alt="">
+            </div>
+            <!-- next 2 tags is always need to be in end of 'layer-card' tag -->
+            <div class="layer-card_undercard"></div>
+            <div class="layer-card_undercard"></div>
+          </div>
+          <div class="layer-card">
+            <div class="layer-card_overlay news_new-content">
+              <div class="news_new-content_body">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eum officiis, illum eius a eligendi modi rem aut doloremque nostrum quasi porro quaerat ad totam consequatur atque molestias sunt obcaecati.</p>
+              </div>
+              <div class="news_new-content_bottom">
+                <div class="news_new-content_bottom_controls">
+                  <a href="#" class="secondary-btn">
+                    Whitepaper
+                  </a>
+                </div>
+                <div class="news_new-content_bottom_date">
+                  <img src="../../res/images/clock-icon.svg" alt="">
+                  <time>02.06.2021</time>
+                </div>
+                
+              </div>
+            </div>
+            <div class="layer-card_background">
+              <img src="../../res/images/photos/house.png" alt="">
+            </div>
+            <!-- next 2 tags is always need to be in end of 'layer-card' tag -->
+            <div class="layer-card_undercard"></div>
+            <div class="layer-card_undercard"></div>
+          </div>
+
+        </div>
+        
+      </section>
+
+      <section id="tesla-graph" style="background-image: url(./res/images/dots-bg.svg);">
+
+        <div class="container">
+          <div class="graph-header">
+            <h2 class="second-heading big">Sales of TESLA tokens</h2>
+            <p class="default-paragraph space">
+              The TESLA token is a utility token created on the Binance Smart Chain (BSC), which plays an irreplaceable role in the Tesla’s business model. 
+The purchase of tokens will allow the holder to purchase real Tesla products at a discount, use the TESLA token as a payment tool or access 
+to the limited services offered by the company. Last, but not least, the holder can stake TESLA tokens and earn extra TESLA tokens.
+            </p>
+          </div>
+          <div class="graph-container">
+            <div class="graph-container_diagram">
+
+            </div>
+            <div class="tab-component">
+              <div class="tab-component_header">
+                <button class="tab-btn active">
+                  TESLA token sales information
+                </button>
+                <button class="tab-btn">
+                  Button\
+                </button>
+              </div>
+              <div class="tab-component_body">
+                <div class="tab">
+                  <div class="tesla-information">
+                    <p class="default-paragraph graph">
+                      <b>Total tokens issued *:</b>
+                      <b class="gradient-text graph">3,398,745,477 TESLA</b>
+                    </p>
+                    <p class="default-paragraph graph">
+                      <b>Hard cap:</b>
+                      <b class="gradient-text graph">47,000,000 USD</b>
+                    </p>
+                    <p class="default-paragraph graph">
+                      <b>Tokens sold at this stage:</b>
+                      <b class="gradient-text graph">xx%</b>
+                    </p>
+                    <p class="default-paragraph graph">
+                      <b>Current price:</b>
+                      <b class="gradient-text graph"></b>
+                    </p>
+                    <p class="default-paragraph graph">
+                      <b>Listing price:</b>
+                      <b class="gradient-text graph"></b>
+                    </p>
+                    <p class="default-paragraph graph-desc">
+                      * This is the total number of tokens created. If not all tokens for sale are sold during the sale, the unsold tokens will be burned. Along with them, tokens for team members and other members will be burned proportionally.
+                    </p>
+                  </div>
+                </div>
+                <div class="tab" style="display: none;">
+                  <table class="tokentabe">
+                    <thead>
+                      <tr>
+                        <th>Distribution</th>
+                        <th>Number of tokens</th>
+                        <th colspan="3">Percentage of representation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- change rowspans if size of table changes -->
+                      <tr class="accent">
+                        <td>Token sale</td>
+                        <td>2,375,833,056</td>
+                        <td>69,90%</td>
+                        <td class="rowcatcher" rowspan="2">Test</td>
+                        <td class="rowcatcher" rowspan="2">80%</td>
+                      </tr>
+                      <tr class="accent">
+                        <td>Token sale</td>
+                        <td>2,375,833,056</td>
+                        <td>69,90%</td>
+                      </tr>
+                      <tr class="space"></tr>
+                      <tr>
+                        <td>Token sale</td>
+                        <td>2,375,833,056</td>
+                        <td>69,90%</td>
+                        <td class="rowcatcher" rowspan="5">Test2</td>
+                        <td class="rowcatcher" rowspan="5">20%</td>
+                      </tr>
+                      <tr>
+                        <td>Token sale</td>
+                        <td>2,375,833,056</td>
+                        <td>69,90%</td>
+                      </tr>
+                      <tr>
+                        <td>Token sale</td>
+                        <td>2,375,833,056</td>
+                        <td>69,90%</td>
+                      </tr>
+                      <tr>
+                        <td>Token sale</td>
+                        <td>2,375,833,056</td>
+                        <td>69,90%</td>
+                      </tr>
+                      <tr>
+                        <td>Token sale</td>
+                        <td>2,375,833,056</td>
+                        <td>69,90%</td>
+                      </tr>
+                      <tr class="summ">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="rowcatcher" colspan="0">3,398,745,477</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="roadmap" style="background-image: url(../../res/images/dots-bg.svg);">
+        <div class="container">
+          <div class="roadmap-header">
+            <h2 class="second-heading big">Roadmap</h2>
+              <p class="default-paragraph space">
+                The history of Tesla dates back to 1946. The modern appearance of the company has been formed since 2012, when the brand returned to the Czech Republic. Now the company connects a trusted brand, smart home and the world of cryptocurrencies. In the near future, we plan to enter most EU markets and further expand our products to other major countries.
+              </p>
+          </div>
+          <div class="roadmap-content">
+
+            <div class="tab-component">
+              <div class="tab-component_header center">
+                <button class="tab-btn active">
+                  Roadmap
+                </button>
+                <button class="tab-btn">
+                  How will it work?
+                </button>
+              </div>
+              <div class="tab-component_body">
+                <div class="tab">
+                  <div class="timeline">
+                    <div class="timeline_left">
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">1991</h4>
+                          <p class="default-paragraph graph">Establishment of Tesla a.s.</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">2012</h4>
+                          <p class="default-paragraph graph">Return of the brand to the Czech Republic</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">March 2021</h4>
+                          <p class="default-paragraph graph">Launch of a new portfolio of smart products in the Czech Republic</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">July 2021</h4>
+                          <p class="default-paragraph graph">TESLA tokens for sale to angel investors</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">Q4 2021</h4>
+                          <p class="default-paragraph graph">Expansion of Tesla smart devices to Slovenia, Hungary and Slovakia</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">2022 - 2023</h4>
+                          <p class="default-paragraph graph">Tesla Smart products expansion to EU countries</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline_progress">
+                      <div class="line">
+                        <div class="progress" style="height: 25%;"></div>
+                      </div>
+                    </div>
+                    <div class="timeline_right">
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">1946</h4>
+                          <p class="default-paragraph graph">Tesla is founded</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">2008</h4>
+                          <p class="default-paragraph graph">Inflow of foreign capital</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">2021</h4>
+                          <p class="default-paragraph graph">Preparation products’ series for the smart home</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">May 2021</h4>
+                          <p class="default-paragraph graph">Publication of Whitepaper</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">September 2021</h4>
+                          <p class="default-paragraph graph">TESLA tokens sale launch to the public</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">May 2022</h4>
+                          <p class="default-paragraph graph">CONSENSUS 2022</p>
+                        </div>
+                      </div>
+                      <div class="timeline_point">
+                        <div class="prepoint"><div class="line"></div><div class="circle"></div></div>
+                        <div class="content">
+                          <h4 class="gradient-text graph">2024</h4>
+                          <p class="default-paragraph graph">Listing on token exchanges</p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="tab" style="display: none;">
+                  
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="mobile-app" style="background-image: url(../../res/images/dots-bg.svg);">
+        <div class="container">
+          <div class="mobile-banner">
+            <div class="mobile-banner_phone">
+              <div class="mobile-banner_mokap">
+                <img src="../../res/images/phone.svg" alt="">
+              </div>
+            </div>
+            <div class="mobile-banner_background">
+              <img src="../../res/images/frame-bg.svg" alt="">
+            </div>
+          </div>
+          <div class="app-description">
+            <h2 class="second-heading big">Mobile App</h2>
+            <p class="default-paragraph space">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <div class="app-links">
+              <div class="qr">
+                <img src="../../res/images/qr.png" alt="">
+              </div>
+              <div class="stores">
+                <a href="#">
+                  <img src="../../res/images/app-store.png" alt="">
+                </a>
+                <a href="#">
+                  <img src="../../res/images/google-store.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" style="background-image: url(../../res/images/dots-bg.svg);">
+        <div class="container">
+          <div class="slider-header">
+            <div class="slider_title">
+              <h2 class="second-heading big">Media & partners</h2>
+              <p class="default-paragraph space">
+                Tesla regularly appears in prestigious media and has trustworthy partners with international exposure.
+              </p>
+            </div>
+            <div class="slider-header_controls">
+              <button class="circle-btn slider">
+                <div class="arrow left"></div>
+              </button>
+              <button class="circle-btn slider">
+                <div class="arrow right"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="slider-holder">
+            <div class="slide">
+              <a href="#">
+                <img src="../../res/images/partners/forbes.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#">
+                <img src="../../res/images/partners/czc.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#">
+                <img src="../../res/images/partners/alza_cz.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#">
+                <img src="../../res/images/partners/datart_logo.png" alt="">
+              </a>
+            </div>
+            <div class="slide">
+              <a href="#">
+                <img src="../../res/images/partners/vodafone-logo.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="team">
+        <div class="container">
+          <div class="team-header">
+            <h2 class="second-heading big">Team</h2>
+            <p class="default-paragraph space">
+              The members of the Tesla team are experts in their fields with many years of experience in the blockchain industry and real business. 
+              <br>The combination of founders, the best IT solutions, experienced advisors and a young marketing team together create synergies leading to phenomenal success.
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="team">
+            <div class="team_leadership">
+              
+              <div class="team_person">
+                <div class="photo">
+                  <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                </div>
+                <div class="info">
+                  <div class="links">
+                    <a href="#">
+                      <img src="../../res/images/linkedin-icon.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="name">
+                    <h4 class="gradient-text graph">
+                      Adam <br>
+                      Neuberger</h4>
+                  </div>
+                  <div class="description">
+                    <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="team_person">
+                <div class="photo">
+                  <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                </div>
+                <div class="info">
+                  <div class="links">
+                    <a href="#">
+                      <img src="../../res/images/linkedin-icon.svg" alt="">
+                    </a>
+                  </div>
+                  <div class="name">
+                    <h4 class="gradient-text graph">
+                      Adam <br>
+                      Neuberger</h4>
+                  </div>
+                  <div class="description">
+                    <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="tab-component">
+              <div class="tab-component_header center">
+                <button class="tab-btn active">
+                  Advisory Doard
+                </button>
+                <button class="tab-btn">
+                  Management
+                </button>
+                <button class="tab-btn">
+                  Marketing Team
+                </button>
+              </div>
+              <div class="tab-component_body">
+                <div class="tab">
+                  <div class="team-grid">
+                    
+                    <div class="team_person">
+                      <div class="top">
+                        <div class="photo">
+                          <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <div class="links">
+                            <a href="#">
+                              <img src="../../res/images/linkedin-icon.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="name">
+                            <h4 class="gradient-text graph">
+                              Adam <br>
+                              Neuberger</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                      </div>
+                    </div>
+
+                    <div class="team_person">
+                      <div class="top">
+                        <div class="photo">
+                          <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <div class="links">
+                            <a href="#">
+                              <img src="../../res/images/linkedin-icon.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="name">
+                            <h4 class="gradient-text graph">
+                              Adam <br>
+                              Neuberger</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                      </div>
+                    </div>
+
+                    <div class="team_person">
+                      <div class="top">
+                        <div class="photo">
+                          <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <div class="links">
+                            <a href="#">
+                              <img src="../../res/images/linkedin-icon.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="name">
+                            <h4 class="gradient-text graph">
+                              Adam <br>
+                              Neuberger</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                      </div>
+                    </div>
+
+                    <div class="team_person">
+                      <div class="top">
+                        <div class="photo">
+                          <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <div class="links">
+                            <a href="#">
+                              <img src="../../res/images/linkedin-icon.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="name">
+                            <h4 class="gradient-text graph">
+                              Adam <br>
+                              Neuberger</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                      </div>
+                    </div>
+
+                    <div class="team_person">
+                      <div class="top">
+                        <div class="photo">
+                          <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <div class="links">
+                            <a href="#">
+                              <img src="../../res/images/linkedin-icon.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="name">
+                            <h4 class="gradient-text graph">
+                              Adam <br>
+                              Neuberger</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                      </div>
+                    </div>
+                    <div class="team_person">
+                      <div class="top">
+                        <div class="photo">
+                          <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <div class="links">
+                            <a href="#">
+                              <img src="../../res/images/linkedin-icon.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="name">
+                            <h4 class="gradient-text graph">
+                              Adam <br>
+                              Neuberger</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                      </div>
+                    </div>
+                    <div class="team_person">
+                      <div class="top">
+                        <div class="photo">
+                          <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <div class="links">
+                            <a href="#">
+                              <img src="../../res/images/linkedin-icon.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="name">
+                            <h4 class="gradient-text graph">
+                              Adam <br>
+                              Neuberger</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                      </div>
+                    </div>
+                    <div class="team_person">
+                      <div class="top">
+                        <div class="photo">
+                          <img src="https://i.ytimg.com/vi/pg9zG9o8WGg/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="info">
+                          <div class="links">
+                            <a href="#">
+                              <img src="../../res/images/linkedin-icon.svg" alt="">
+                            </a>
+                          </div>
+                          <div class="name">
+                            <h4 class="gradient-text graph">
+                              Adam <br>
+                              Neuberger</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description">
+                        <p class="default-paragraph graph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="tab" style="display: none;">
+                  
+                </div>
+                
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+    
+    </main>
+
+    <footer id="footer" style="background-image: url(../../res/images/dots-bg.svg);">
+      <div class="container">
+        <div class="subscribe">
+          <div class="logo">
+            <a href="#">
+              <img src="../../res/images/logo.svg" alt="">
+            </a>
+          </div>
+          <div class="form">
+            <form class="sub-form" action="#" method="POST">
+              <label for="input-email">Subscribe to Tesla news </label>
+              <input id="input-email" type="text" required>
+              <input type="submit">
+            </form>
+            <p id="required" class="required gradient-text">Please complete this required field.</p>
+          </div>
+          <small class="copyright">
+            Copyright © 2021 Tesla
+          </small>
+        </div>
+        <div class="links">
+          <div class="links_top">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Tezos</a></li>
+                <li><a href="#">Cosmos</a></li>
+                <li><a href="#">Kava</a></li>
+                <li><a href="#">Polkadot</a></li>
+                <li><a href="#">Terra</a></li>
+                <li><a href="#">Irisnet</a></li>
+                <li><a href="#">Chainlink</a></li>
+              </ul>
+            </nav>
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Telegram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">UNIFIeconomy</a></li>
+              </ul>
+            </nav>
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Stake now</a></li>
+                <li><a href="#">Manage reward</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="links_bottom">
+            <a href="#" class="circle-btn secondary">
+              <img src="../../res/images/telegram-gray-logo.svg" alt="">
+            </a>
+            <a href="#" class="circle-btn secondary">
+              <img src="../../res/images/youtube-gray-logo.svg" alt="">
+            </a>
+            <a href="#" class="circle-btn secondary">
+              <img src="../../res/images/instagram-gray-logo.svg" alt="">
+            </a>
+            <a href="#" class="circle-btn secondary">
+              <img src="../../res/images/twitter-gray-logo.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- </div> -->
 
 </body>
 </html>

@@ -8,6 +8,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'index.html')
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/res', to: 'res' }
+      ]
+    })
   ],
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -31,12 +36,25 @@ module.exports = {
         test: /\.html$/i,
         loader: 'html-loader',
       },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      }
     ],
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
-    open: true
+    open: true,
+    disableHostCheck: true,
   },
 };
