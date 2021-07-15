@@ -37,6 +37,18 @@ module.exports = {
         loader: 'html-loader',
       },
       {
+        test: /\.(svg|png|jpg|jpeg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'wpres/'
+            }
+          }
+        ]
+      },
+      {
         test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
