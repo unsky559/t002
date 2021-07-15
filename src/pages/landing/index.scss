@@ -113,8 +113,11 @@ body{
     
     ul{
       margin-top: -6px;
+      li{
+        display: inline-block;
+      }
     }
-
+    
     &_link{
       margin-top: -15px;
       text-decoration: none;
@@ -497,7 +500,10 @@ body{
             width: 160px;
             height: 85px;
             margin-right: 20px;
-            background: var(--main-gradient);
+            #courseGraph{
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
