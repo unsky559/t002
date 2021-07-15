@@ -10,7 +10,9 @@
   },
   "author": "unsky559",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "chart.js": "^3.4.1"
+  },
   "devDependencies": {
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^5.2.6",
