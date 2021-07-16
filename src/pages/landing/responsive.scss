@@ -1,0 +1,211 @@
+body{
+  min-width: 425px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header{
+    &_navigation{
+      display: none;
+    }
+  }
+  #tesla-token{
+    .main-info{
+      width: calc(100%/10 * 4 + 20px);
+    }
+  }
+
+  #news{
+    .news{
+      .layer-card{
+        width: calc(100vw / 12 * 5 - 20px);
+      }
+    }
+  }
+
+  #footer{
+    .subscribe{
+      width: calc(100% / 10 * 4);
+      margin-right: calc(100% / 10 * 2);
+    }
+  }
+
+}
+
+@media screen and (max-width: 1064px) {
+  #tesla-token{
+    .container{
+      justify-content: center;
+    }
+    .main-info{
+      width: calc(100%/10 * 4);
+      min-width: 360px;
+    }
+    .banner{
+      display: none;
+    }
+  }
+
+  #features{
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+    }
+    .feature{
+      margin: 0 auto;
+    }
+  }
+
+  #news{
+    .slider-holder{
+      &_saver{
+        display: none;
+      }
+    }
+    .news{
+      .layer-card{
+        width: calc(100vw / 12 * 6 - 20px);
+      }
+    }
+  }
+
+
+  #team{
+    .team{
+      &_leadership{
+        .team_person{
+          width: calc(100% / 10 * 6 - 20px);
+        }
+      }
+    }
+  
+    .team-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-gap: 5%;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  }
+  #mobile-app{
+    padding: 50px 0;
+    margin: 0;
+    .mobile-banner{
+      width: calc(100% / 10 * 5 - 40px);
+      &_background{
+        img{
+          display: none;
+        }
+      }
+    }
+    .app-description{
+      width: calc(100% / 10 * 5 - 40px);
+    }
+  }
+
+}
+
+@media screen and (max-width: 740px) {
+  #video{
+    padding: 96px 0;
+    background-size: cover;
+    background-position: center;
+    .container{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .video-container{
+      width: calc(100% / 10 * 8);
+      margin: 0 auto;
+    }
+    .information-container{
+      margin-left: 0;
+      padding-bottom: 50px;
+      padding-top: 0;
+    }
+  }
+  #news{
+    .news{
+      .layer-card{
+        width: calc(100vw - 20px);
+      }
+    }
+  }
+  #tesla-graph{
+    .graph-container{
+      flex-direction: column-reverse;
+      width: 100%;
+      &_diagram{
+        width: calc(100% / 10 * 7 - 40px);
+        padding-left: 0;
+        margin: 0 auto;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  #mobile-app{
+    .mobile-banner{
+      display: none;
+    }
+    .app-description{
+      width: 100%;
+    }
+  }
+
+  #team{
+    .team{
+      &_leadership{
+        flex-direction: column;
+        .team_person{
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
+    }
+  
+    .team-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 30px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+  #footer{
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .subscribe{
+      width: calc(100% / 10 * 8);
+      margin: 0 auto;
+    }
+    .links{
+      width: calc(100% / 10 * 8);      
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #footer{
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .subscribe{
+      width: 100%;
+      margin: 0;
+    }
+    .links{
+      width: 100%;      
+      margin: 0;
+      margin-top: 50px;
+    }
+  }
+}

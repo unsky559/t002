@@ -1,5 +1,6 @@
 import html from './index.html';
 import './index.scss';
+import './responsive.scss';
 import { Chart, LineElement, LineController, ScriptableContext, ChartType } from 'chart.js';
 import { registerables } from 'chart.js';
 Chart.register(...registerables);
