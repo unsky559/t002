@@ -3,6 +3,7 @@ import './index.scss';
 import './responsive.scss';
 import { Chart, LineElement, LineController, ScriptableContext, ChartType } from 'chart.js';
 import { registerables } from 'chart.js';
+import TabHandler from '../../handlers/tabHandler';
 Chart.register(...registerables);
 
 
@@ -10,6 +11,15 @@ window.onload = () => {
   document.body.innerHTML = html;
   buildGraph();
   buildDiagram();
+
+  const salesTab = new TabHandler(document.getElementById('tesla-token-tab-component'));
+  salesTab.autoConfigureListeners();
+
+  const roadMapTab = new TabHandler(document.getElementById('roadmap-tab-component'));
+  roadMapTab.autoConfigureListeners();
+
+  const teamTab = new TabHandler(document.getElementById('team-tab-component'));
+  teamTab.autoConfigureListeners();
 }
 
 
