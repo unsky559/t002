@@ -81,6 +81,7 @@ body{
   font-size: 14px;
   line-height: 17px;
   background: var(--main-gradient);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &.graph{
@@ -93,16 +94,11 @@ body{
 .header{
   height: 140px;
   width: 100%;
-
   .container{
     height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  &_logo{
-    
   }
   &_navigation{
     margin-left: 11%;
@@ -313,6 +309,7 @@ body{
   line-height: 29px;
   
   background: var(--main-gradient);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -365,9 +362,6 @@ body{
 
   .main-info{
     width: calc(100% / 10 * 3 + 20px);
-    &_header{
-      // background-color: red;
-    }
     &_round{
       margin-top: 25px;
       width: 100%;
@@ -463,9 +457,6 @@ body{
 
               color: var(--gray-white-color);
             }
-            &_icon{
-
-            }
             &_currency{
               text-transform: uppercase;
               font-family: $font-mon;
@@ -475,6 +466,7 @@ body{
               line-height: 17px;
 
               background: var(--main-gradient);
+              background-clip: text;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
             }
@@ -609,9 +601,6 @@ body{
     margin: 0 10px;
     display: flex;
     align-items: center;
-    &_image{
-
-    }
     &_text{
       flex-grow: 1;
       margin-left: 35px;
@@ -774,9 +763,6 @@ body{
   .news-header{
     display: flex;
     justify-content: space-between;
-    &_title{
-
-    }
     &_controls{
       display: flex;
     }
@@ -832,9 +818,6 @@ body{
         .secondary-btn{
           color: var(--white-white-color);
           border-color: var(--white-white-color);
-        }
-        &_controls{
-
         }
         &_date{
           display: flex;
@@ -901,10 +884,6 @@ body{
   padding: 22px 0;
   background-position: top right;
   background-repeat: no-repeat;
-  .graph-header{
-    
-  }
-  
   .graph-container{
     padding-top: 35px;
     display: flex;
@@ -1222,9 +1201,6 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    &_title{
-
-    }
     &_controls{
       display: flex;
     }
