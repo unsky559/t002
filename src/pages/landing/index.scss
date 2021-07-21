@@ -768,7 +768,7 @@ body{
     }
   }
   .slider-holder{
-    max-width: 1440px;
+    max-width: 100vw;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -776,7 +776,7 @@ body{
     padding-top: 20px;
     &_saver{
       height: inherit;
-      min-width: calc(100% / 12 * 1 + 10px);;
+      min-width: calc(100vw / 12 * 1 + 10px);
     }
   }
   .news{
@@ -784,6 +784,7 @@ body{
     margin-bottom: 82px;
     .layer-card{
       width: calc(100vw / 12 * 4 - 20px);
+      max-width: 500px;
       height: 282px;
       margin: 0 10px;
     }

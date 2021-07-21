@@ -4,6 +4,7 @@ import './responsive.scss';
 import { Chart, LineElement, LineController, ScriptableContext, ChartType } from 'chart.js';
 import { registerables } from 'chart.js';
 import TabHandler from '../../handlers/tabHandler';
+import SwitchHandler from '../../handlers/switchHandler';
 Chart.register(...registerables);
 
 
@@ -20,6 +21,27 @@ window.onload = () => {
 
   const teamTab = new TabHandler(document.getElementById('team-tab-component'));
   teamTab.autoConfigureListeners();
+  
+  const mainImageSwitch = new SwitchHandler(document.querySelector('.banner .banner_image'));
+  
+  const themeSwitherSwitch = new SwitchHandler(document.querySelector("#theme-switcher"));
+  const dollarFeatSwitch = new SwitchHandler(document.querySelector('#dollar-feat'));  
+  const bitcoinFeatSwitch = new SwitchHandler(document.querySelector('#bitcoin-feat'));
+  const discountVoucherFeatSwitch = new SwitchHandler(document.querySelector('#discount-voucher-feat'));  
+  const laptopFeatSwitch = new SwitchHandler(document.querySelector('#laptop-feat'));
+  
+  const themeSwitherBtn = document.querySelector("#theme-switcher");
+  themeSwitherBtn.addEventListener('click', () => {
+    document.body.classList.toggle('black');
+    mainImageSwitch.siwitch();
+    themeSwitherSwitch.siwitch();
+    dollarFeatSwitch.siwitch();
+    bitcoinFeatSwitch.siwitch();
+    discountVoucherFeatSwitch.siwitch();
+    laptopFeatSwitch.siwitch();
+
+  });
+
 }
 
 

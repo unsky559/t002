@@ -47,8 +47,10 @@
       </nav>
       <div class="header_controls">
         
-        <button class="circle-btn header_controls_theme-switcher">
+        <button id="theme-switcher" class="circle-btn header_controls_theme-switcher">
+          <!-- WARN: here will alwasys show only one of elements. See switchHandler -->
           <img src="../../res/images/sun-icon.svg" alt="">
+          <img src="../../res/images/moon-icon.svg" alt="">
         </button>
         <button class="secondary-btn header_controls_secondary-btn">
           <img src="../../res/images/user-icon.svg" alt="">
@@ -127,7 +129,9 @@
           </div>
           <div class="banner">
             <div class="banner_image">
+              <!-- WARN: here will alwasys show only one of elements. See switchHandler -->
               <img src="../../res/images/frame.svg" alt="">
+              <img src="../../res/images/frame-black.svg" alt="">
             </div>
             <div class="contact-us">
               <span class="contact-us_text">
@@ -164,26 +168,34 @@
       <section id="features">
         <div class="container">
           <div class="feature">
-            <div class="feature_image">
+            <div id="dollar-feat" class="feature_image">
+              <!-- WARN: here will alwasys show only one of elements. See switchHandler -->
               <img src="../../res/images/dollar-feat.svg" alt="">
+              <img src="../../res/images/dollar-feat-white.svg" alt="">
             </div>
             <h3 class="feature_text">Payment tool</h3>
           </div>
           <div class="feature">
-            <div class="feature_image">
+            <div id="bitcoin-feat" class="feature_image">
+              <!-- WARN: here will alwasys show only one of elements. See switchHandler -->
               <img src="../../res/images/bitcoin-feat.svg" alt="">
+              <img src="../../res/images/bitcoin-feat-white.svg" alt="">
             </div>
             <h3 class="feature_text">Stake</h3>
           </div>
           <div class="feature">
-            <div class="feature_image">
+            <div id="discount-voucher-feat" class="feature_image">
+              <!-- WARN: here will alwasys show only one of elements. See switchHandler -->
               <img src="../../res/images/discount-voucher-feat.svg" alt="">
+              <img src="../../res/images/discount-voucher-feat-white.svg" alt="">
             </div>
             <h3 class="feature_text">Voucher for discounts</h3>
           </div>
           <div class="feature">
-            <div class="feature_image">
+            <div id="laptop-feat" class="feature_image">
+              <!-- WARN: here will alwasys show only one of elements. See switchHandler -->
               <img src="../../res/images/laptop-feat.svg" alt="">
+              <img src="../../res/images/laptop-feat-white.svg" alt="">
             </div>
             <h3 class="feature_text">Access to limited services</h3>
           </div>
@@ -247,6 +259,33 @@
 
           <div class="slider-holder_saver"></div>
           
+          <div class="layer-card">
+            <div class="layer-card_overlay news_new-content">
+              <div class="news_new-content_body">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eum officiis, illum eius a eligendi modi rem aut doloremque nostrum quasi porro quaerat ad totam consequatur atque molestias sunt obcaecati.</p>
+              </div>
+              <div class="news_new-content_bottom">
+                <div class="news_new-content_bottom_controls">
+                  <a href="#" class="secondary-btn">
+                    Whitepaper
+                  </a>
+                </div>
+                <div class="news_new-content_bottom_date">
+                  <img src="../../res/images/clock-icon.svg" alt="">
+                  <time>02.06.2021</time>
+                </div>
+                
+              </div>
+            </div>
+            <div class="layer-card_background">
+              <img src="../../res/images/photos/house.png" alt="">
+            </div>
+            <!-- next 2 tags is always need to be in end of 'layer-card' tag -->
+            <div class="layer-card_undercard"></div>
+            <div class="layer-card_undercard"></div>
+          </div>
+
           <div class="layer-card">
             <div class="layer-card_overlay news_new-content">
               <div class="news_new-content_body">
