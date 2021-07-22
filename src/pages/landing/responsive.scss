@@ -25,6 +25,17 @@ body{
     }
   }
 
+  #partners{
+    .slider-holder{
+      .slide{
+        min-width: calc(100% / 10 * 2.5 - 20px);
+        max-width: calc(100% / 10 * 2.5 - 20px);
+      }
+    }
+  }
+
+  
+
   #footer{
     .subscribe{
       width: calc(100% / 10 * 4);
@@ -72,6 +83,14 @@ body{
     }
   }
 
+  #partners{
+    .slider-holder{
+      .slide{
+        min-width: calc(100% / 10 * 5 - 20px);
+        max-width: calc(100% / 10 * 5 - 20px);
+      }
+    }
+  }
 
   #team{
     .team{
@@ -154,6 +173,15 @@ body{
     }
     .app-description{
       width: 100%;
+    }
+  }
+
+  #partners{
+    .slider-holder{
+      .slide{
+        min-width: calc(100% - 20px);
+        max-width: calc(100% - 20px);
+      }
     }
   }
 

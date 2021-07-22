@@ -6,6 +6,7 @@ import { registerables } from 'chart.js';
 import TabHandler from '../../handlers/tabHandler';
 import SwitchHandler from '../../handlers/switchHandler';
 import SliderController from '../../controllers/slider-controller';
+import SliderControllerInfinite from '../../controllers/slider-controller-infinite';
 Chart.register(...registerables);
 
 
@@ -50,6 +51,18 @@ window.onload = () => {
   document.querySelector('#newsRight').addEventListener("click", () => {
     newsSlider.slideRight();
   });
+
+  const brandsSlider = new SliderControllerInfinite(document.getElementById('slider-brands'));
+  document.querySelector("#brandsLeft").addEventListener("click", () => {
+    brandsSlider.slideLeft();
+  })
+  document.querySelector("#brandsRight").addEventListener("click", () => {
+    brandsSlider.slideRight();
+  })
+
+  setInterval(() => {
+    brandsSlider.slideRight();
+  }, 5000);
 
 }
 

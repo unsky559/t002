@@ -124,16 +124,21 @@ body{
       color: var(--gray-white-color);
       margin-right: 24px;
       
-      &.active{
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: - 8px;
+
+        width: 0%;
+        transition: 0.1s;
+        height: 1px;
+        background: var(--main-gradient);
+      }
+
+      &:hover{
         position: relative;
         &::before{
-          content: "";
-          position: absolute;
-          bottom: - 8px;
-
           width: 100%;
-          height: 1px;
-          background: var(--main-gradient);
         }
       }
 
@@ -1210,14 +1215,16 @@ body{
   }
   .slider-holder{
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     display: flex;
     .slide{
       padding: 70px 0;
-      width: calc(100% / 10 * 2 - 20px);
+      min-width: calc(100% / 10 * 2 - 20px);
+      max-width: calc(100% / 10 * 2 - 20px);
       margin-left: 10px;
       margin-right: 10px;
       display: flex;
+      justify-content: center;
       align-items: center;
     }
   }
@@ -1397,6 +1404,7 @@ body{
       font-weight: 400;
       line-height: 21px;
       margin-top: 60px;
+      color: var(--gray-white-color);
     }
   }
 

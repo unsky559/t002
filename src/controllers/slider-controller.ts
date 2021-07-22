@@ -34,12 +34,10 @@ export default class SliderController {
     for(let i = 0; i < this.container.children.length; i++){
       this._isAimateFinished = false;
       let current = <HTMLElement>this.container.children[i];
-      console.dir(`translateX(-${current.clientWidth * this._offset}px)`);
       if(anim){
         current.style.transition = '1s';
       }
       current.style.transform = `translateX(${current.clientWidth * this._offset + this._offset * 20 + 10}px)`;
-      // current.style.marginLeft = Number.parseInt(current.style.marginLeft) * this._offset + 'px';
     }
     setTimeout(() => {
       for(let i = 0; i < this.container.children.length; i++){
@@ -53,12 +51,16 @@ export default class SliderController {
 
   slideLeft(size = 1) {
     if(!this._isAimateFinished){ return; }
-    this.offset += size;
+    if(-this.offset > 0) {
+      this.offset += size;
+    }    
   }
-
+  
   slideRight(size = 1) {
     if(!this._isAimateFinished){ return; }
-    this.offset -= size;
+    if(-this.offset < this.container.children.length - 1){
+      this.offset -= size;
+    }
   }
 
 }
