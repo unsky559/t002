@@ -8,6 +8,10 @@ $font-cau: 'Causten', sans-serif;
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 ul,
