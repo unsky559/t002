@@ -900,6 +900,56 @@ body{
       padding-left: 20px;
       margin-right: 50px;
     }
+    .legend{
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-top: 25px;
+      .leg{
+        display: inline-block;
+        width: calc(100% / 3 - 2px * 2);
+        margin-bottom: 10px;
+        &_block{
+          height: 7px;
+          width: 60px;
+          border-radius: 5px;
+          margin-bottom: 5px;
+          &.grad{
+            background: var(--main-gradient);
+          }
+          &.p-1{
+            background: var(--secondary-color);
+          }
+          &.p-2{
+            background: var(--secondary-color);
+            opacity: 0.5;
+          }
+          &.p-3{
+            background: var(--secondary-color);
+            opacity: 0.65;
+          }
+          &.p-4{
+            background: var(--secondary-color);
+            opacity: 0.2;
+          }
+          &.p-5{
+            background: var(--secondary-color);
+            opacity: 0.1;
+          }
+          &.p-6{
+            background: var(--secondary-color);
+            opacity: 0.3;
+          }
+        }
+        span{
+          font-family: $font-mon;
+          font-size: 12px;
+          font-weight: 400;
+          color: var(--gray-white-color);
+          line-height: 14px;
+        }
+      }
+    }
   }
 
   .graph-desc{
@@ -965,6 +1015,7 @@ body{
   }
   .tab{
     width: 100%;
+    overflow-x: auto;
   }
 }
 
