@@ -18,6 +18,9 @@ body{
     .news{
       .layer-card{
         width: calc(100vw / 12 * 5 - 20px);
+        &:first-child{
+          margin-left: 10px;
+        }
       }
     }
   }
@@ -128,7 +131,7 @@ body{
   #news{
     .news{
       .layer-card{
-        width: calc(100vw - 20px);
+        width: calc(100vw - 40px);
       }
     }
   }

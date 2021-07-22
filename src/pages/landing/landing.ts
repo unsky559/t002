@@ -5,6 +5,7 @@ import { Chart, LineElement, LineController, ScriptableContext, ChartType } from
 import { registerables } from 'chart.js';
 import TabHandler from '../../handlers/tabHandler';
 import SwitchHandler from '../../handlers/switchHandler';
+import SliderController from '../../controllers/slider-controller';
 Chart.register(...registerables);
 
 
@@ -40,6 +41,14 @@ window.onload = () => {
     discountVoucherFeatSwitch.siwitch();
     laptopFeatSwitch.siwitch();
 
+  });
+
+  const newsSlider = new SliderController(document.getElementById('news-slider'));
+  document.querySelector('#newsLeft').addEventListener("click", () => {
+    newsSlider.slideLeft();
+  });
+  document.querySelector('#newsRight').addEventListener("click", () => {
+    newsSlider.slideRight();
   });
 
 }
